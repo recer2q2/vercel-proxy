@@ -1,5 +1,5 @@
 /*
- * CORS-проксі для плагіну UASerials — Vercel Function (Node.js).
+ * CORS-проксі для плагіну larry_ua — Vercel Function (Node.js).
  *
  * Призначення: сторінки сайтів (HTML) для плагіну у браузері / на ТВ, де сайт блокує запит через CORS.
  * НЕ призначений для відео: посилання на сегменти в m3u8 відносні й ламаються через проксі.
@@ -16,6 +16,9 @@ const SITES = {
   'uaserials.com': 'https://uaserials.com/',
   'tortuga.tw': 'https://uaserials.com/',
   'tortuga.wtf': 'https://uaserials.com/',
+  // плеєри сайту uafix.net (UAflix): ZetVideo віддає сторінку лише з Referer uafix.net
+  'zetvideo.net': 'https://uafix.net/',
+  'ashdi.vip': 'https://ashdi.vip/',
 };
 
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36';
